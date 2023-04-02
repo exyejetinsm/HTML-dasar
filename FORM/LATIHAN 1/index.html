@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      #username,
+      #password {
+        width: 95%;
+        background: salmon;
+        border: 1px solid yellow;
+      }
+      #username:focus,
+      #password:focus {
+        border: 1px solid greenyellow;
+        background-color: coral;
+      }
+      #username:placeholder,
+      #password {
+        font-size: 20px;
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td><label for="username">username :</label></td>
+          <td><input type="text" id="username" placeholder="xyzlanzz" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">password :</label></td>
+          <td><input type="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <input type="radio" id="wanita" name="jenisKelamin" /><label
+              for="wanita"
+              >wanita</label
+            >
+            <input type="radio" id="pria" name="jenisKelamin" /><label
+              for="pria"
+              >pria</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <input type="checkbox" id="penyanyi" /><label for="penyanyi"
+              >menyanyi</label
+            >
+            <input type="checkbox" id="ngoding" /><label for="ngoding"
+              >ngoding</label
+            >
+            <input type="checkbox" id="olahraga" /><label for="olahraga"
+              >olahraga</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea
+              placeholder="kontoooooool"
+              name="adada"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <select name="" id="">
+        <option value="kota">Jakarta</option>
+        <option value="kota">Bandung</option>
+        <option value="kota">Tangerang</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Kirim !" />
+      <!-- submit. reset, button -->
+      <br /><br />
+      <button type="submit">Kirim</button>
+    </form>
+  </body>
+</html>
